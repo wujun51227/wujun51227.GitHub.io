@@ -1,6 +1,6 @@
 
 
-# Coffee-HDL 用户手册 v0.5
+# Coffee-HDL 用户手册 v0.5.1
 
 ##  介绍
 
@@ -419,6 +419,11 @@ wire类型是用于表达组合电路输出结果的元素,对应生成verilog�
 Wire wire_name: wire(number|[])
 ```
 
+有符号数申明
+```coffeescript
+Wire wire_name: wire(number|[]).setSign()
+```
+
 如果把wire组织成数组,声明方式如下
 
 生成10个16bit宽度线
@@ -556,6 +561,7 @@ assign dout = {w3[4],w3[2],w3[0]};
 wire声明还有前缀表达形式Net wire_name/Net(wire_name,width), Net形式的申明可以在后面直接加等号或者语句块赋值
 
 > Net foo = bar 
+> SignNet(foo,16) = bar # 有符号类型
 
 相当于
 > foo = wire()
@@ -709,12 +715,14 @@ end
 
 * drive(list...)  当前寄存器驱动list里面的所有信号
 
+* setSign() 寄存器为有符号类型
+
   
 
 
 **reg的另外一种申明**
 
-reg声明还有前缀表达形式Dff variable_name/Dff(variable_name,width), Dff形式的申明可以在后面直接加等号或者语句块赋值
+reg声明还有前缀表达形式Dff variable_name/Dff(variable_name,width)/SignDff(variable_name,width), Dff/SignDff形式的申明可以在后面直接加等号或者语句块赋值
 
 
 
