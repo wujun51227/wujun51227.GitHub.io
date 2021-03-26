@@ -555,11 +555,9 @@ assign dout = {w3[4],w3[2],w3[0]};
 
 **wire的另外一种申明**
 
-wire声明还有前缀表达形式Net wire_name/Net(wire_name,width), Net形式的申明可以在后面直接加等号或者语句块赋值
+wire声明还有前缀表达形式Net wire_name/Net(wire_name,width)/SignNet(wire_name,width), Net/SignNet形式的申明可以在后面直接加等号或者语句块赋值
 
 > Net foo = bar 
-
-> SignNet(foo,16) = bar # 有符号类型
 
 相当于
 > foo = wire()
