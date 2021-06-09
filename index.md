@@ -1,3 +1,28 @@
+- [Coffee-HDL 用户手册 v0.5.1](#coffee-hdl------v051)
+  * [介绍](#--)
+  * [安装](#--)
+  * [设计目标](#----)
+  * [文件类型和模块](#-------)
+  * [语言要素](#----)
+  * [组合电路表达](#------)
+  * [assign/consign](#assign-consign)
+  * [always](#always)
+  * [wire](#wire)
+  * [port](#port)
+  * [reg,clock,reset](#reg-clock-reset)
+  * [操作符](#---)
+  * [位选择和部分选择](#--------)
+  * [分支](#--)
+  * [函数抽象](#----)
+  * [状态机](#---)
+  * [实例化模块](#-----)
+  * [通道](#--)
+  * [序列](#--)
+  * [集成](#--)
+  * [关键字](#---)
+  * [感谢](#--)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 # Coffee-HDL 用户手册 v0.5.1
